@@ -50,14 +50,40 @@
 
 10.**Why is it hard to use a traditional computer program to recognize images in a photo?**
 
-      <span style="color:red"> This is because traditional computer programs require explicit step by step code that has to be written by the programmer and implementing this for a task like recognizing images can be quite challenging to the programmer as we don't really understand the steps taken by the brain process and recognize images  </span>
+   <p style="color:red">
+   This is because traditional computer programs require explicit step by step code that has to be written by the programmer and implementing this for a task like recognizing images can be quite challenging to the programmer as we don't really understand the steps taken by the brain process and recognize images. 
+   </p>   
+    
 
+11. **What did Samuel mean by "Weight Assignment"?**
+  
+  <p style="color:red">
+  Weight Assignment is the allocation of random variables which define how the program will operate. These variables(Weights) are updated during training and are also called parameters.
+   </p> 
+   
+12. **What term do we normally use in deep learning for what Samuel called "Weights"?**
 
-1. What did Samuel mean by "Weight Assignment"?
-1. What term do we normally use in deep learning for what Samuel called "Weights"?
-1. Draw a picture that summarizes Arthur Samuel's view of a machine learning model
-1. Why is it hard to understand why a deep learning model makes a particular prediction?
-1. What is the name of the theorem that a neural network can solve any mathematical problem to any level of accuracy?
+   <p style="color:red"> Parameters   </p> 
+   
+13. **Draw a picture that summarizes Arthur Samuel's view of a machine learning model**
+
+   <p style="color:red">
+      Input => Model => Output
+      Weights =>
+   </p> 
+
+14. **Why is it hard to understand why a deep learning model makes a particular prediction?**
+
+   <p style="color:blue">
+   Because the weight selection process is stochastic  
+   </p> 
+
+15. **What is the name of the theorem that a neural network can solve any mathematical problem to any level of accuracy?**
+
+   <p style="color:red">
+      The Universal Approximation Theorem
+   </p> 
+
 1. What do you need in order to train a model?
 1. How could a feedback loop impact the rollout of a predictive policing model?
 1. Do we always have to use 224x224 pixel images with the cat recognition model?
