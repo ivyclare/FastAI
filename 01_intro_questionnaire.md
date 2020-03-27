@@ -120,11 +120,35 @@
       
       <p style="color:red">Pretraiend models are very useful because they contain weights that have typically been trained on large datasets with very deep models and for a long time. These weights can then be used as a starting weights for our model and after training our model for a few epochs we start getting great results. Hence, they save time and resources needed to get very good results. </p> 
 
-1. What is the "head" of a model?
-1. What kinds of features do the early layers of a CNN find? How about the later layers?
-1. Are image models only useful for photos?
-1. What is an "architecture"?
-1. What is segmentation?
-1. What is `y_range` used for? When do we need it?
-1. What are "hyperparameters"?
-1. What's the best way to avoid failures when using AI in an organization?
+26. **What is the "head" of a model?**
+
+      <p style="color:red"> The head of a pretrained model is the last part of that model i.e the section after the convolutional layers of the a pretrained model(known as the backbone) where you customize the layers as required by your model </p> 
+
+
+27. **What kinds of features do the early layers of a CNN find? How about the later layers?**
+      <p style="color:red"> The early layers of a CNN find features like edges, corners, circles etc while later layers start bring these features together to find higher level semantics and concepts like text, dog faces, car wheels, flowers etc </p> 
+
+28. **Are image models only useful for photos?**
+
+      <p style="color:red"> No, Image models can be used in other less likely areas like sound, where the sounds can be converted to images which are then used in the image models. </p> 
+
+29. **What is an "architecture"?**
+
+      <p style="color:red"> An architecture is the actual mathematical function that we are passing the input data and parameters to  </p> 
+
+30. **What is segmentation?**
+
+      <p style="color:red"> Segmentation is creating a model that can recognize each and every pixel in an image </p> 
+
+31. **What is `y_range` used for? When do we need it?**
+
+      <p style="color:red"> y_range is used to tell the model the range of the target variable. It can be used when we have continous number (not a category) like when the target is ratings </p> 
+
+32. **What are "hyperparameters"?**
+
+      <p style="color:red"> Hyperparameters are parameters that cannot be gotten from the dataset but is explicitly specified by the programmer</p> 
+
+33. **What's the best way to avoid failures when using AI in an organization?**
+
+      <p style="color:red">  To make sure test data is kept aside which will be used to evaluate the model performance after it has been trained </p> 
+
