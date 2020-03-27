@@ -33,14 +33,26 @@
       <span style="color:red"> That neural networks were too big and slow to be useful pratically  </span>
 
 6. **What is a GPU?**
+
       <span style="color:red"> Stands for **Graphical Processing Unit**. It is a kind of processor that can run multiple calculations at a time </span>
 
 7. **Open a notebook and execute a cell containing: `1+1`. What happens?**
-      <span style="color:red"> 2 is printed </span>
 
-1. Follow through each cell of the stripped version of the notebook for this chapter. Before executing each cell, guess what will happen.
-1. Complete the Jupyter Notebook online appendix.
-1. Why is it hard to use a traditional computer program to recognize images in a photo?
+      <span style="color:red"> 2 is printed below the cell </span>
+
+8. **Follow through each cell of the stripped version of the notebook for this chapter. Before executing each cell, guess what will happen.**
+
+      <span style="color:red"> Done </span>
+
+9. **Complete the Jupyter Notebook online appendix.**
+
+      <span style="color:blue"> NOT DONE  </span>
+
+10.**Why is it hard to use a traditional computer program to recognize images in a photo?**
+
+      <span style="color:red"> This is because traditional computer programs require explicit step by step code that has to be written by the programmer and implementing this for a task like recognizing images can be quite challenging to the programmer as we don't really understand the steps taken by the brain process and recognize images  </span>
+
+
 1. What did Samuel mean by "Weight Assignment"?
 1. What term do we normally use in deep learning for what Samuel called "Weights"?
 1. Draw a picture that summarizes Arthur Samuel's view of a machine learning model
