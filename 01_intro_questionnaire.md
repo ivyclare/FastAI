@@ -71,10 +71,8 @@
        </p> 
 
 14. **Why is it hard to understand why a deep learning model makes a particular prediction?**
-
-   <p style="color:blue">
-   Because the weight selection process is stochastic  
-   </p> 
+      
+      <p style="color:blue"> Because the weight selection process is stochastic </p> 
 
 15. **What is the name of the theorem that a neural network can solve any mathematical problem to any level of accuracy?**
       
@@ -86,22 +84,42 @@
      
 
 17. **How could a feedback loop impact the rollout of a predictive policing model?**
+      
       <p style="color:red"> A predictive policing model is trained on data that shows the location of arrests. In this case, the model will be predicting arrests and not crime and therefore only shows/reflects the bias in existing policing systems  </p> 
       
 18. **Do we always have to use 224x224 pixel images with the cat recognition model?**
+      
       <p style="color:red"> No we don't. If using a pretrained model, it is recommended to use an image size of 224x224 pixels, but this can be changed as needded.  </p> 
       
 19. **What is the difference between classification and regression?**
+      
       <p style="color:red"> In classification, the model predicts a category or class while regression predicts one or more numerical quantities like temperature </p> 
       
 20. **What is a validation set? What is a test set? Why do we need them?**
-      <p style="color:red"> A **validation set** is a certain percentage of the entire data that is used to evaluate the performance of the model during trianing while a **test set** is data that the model has never seen before that is kept aside to measure the quality of the model after training is completed.  Using the validation set during training can show us if our model is not performing well (overfitting or underfitting) and we can then modify our model and restart training. While the test set is important because it shows us how our model will perform on data it has never seen before. </p> 
       
-1. What will fastai do if you don't provide a validation set?
-1. Can we always use a random sample for a validation set? Why or why not?
-1. What is overfitting? Provide an example.
-1. What is a metric? How does it differ to "loss"?
-1. How can pretrained models help?
+      <p style="color:red"> A validation set is a certain percentage of the entire data that is used to evaluate the performance of the model during trianing while a test set is data that the model has never seen before that is kept aside to measure the quality of the model after training is completed.  Using the validation set during training can show us if our model is not performing well (overfitting or underfitting) and we can then modify our model and restart training. While the test set is important because it shows us how our model will perform on data it has never seen before. </p> 
+      
+21. **What will fastai do if you don't provide a validation set?**
+
+      <p style="color:red"> Fast AI automatically creates a validation set for you (20% of the data) which it will use to evaluate your model </p> 
+
+22. **Can we always use a random sample for a validation set? Why or why not?**
+     
+     <p style="color:red"> Not always. In cases like image classification it is necessary to use a random sample so that the model learns the characteristics of all data it may see in the future but in cases like time series prediction, the data is continous and dependent on time and if samples are taken random it will not be representative of the future data. In this case, if we have monthly data for one year, the first 9 months can used as training data while the last 3 months can be used for validation </p> 
+     
+23.**What is overfitting? Provide an example.**
+
+
+   <p style="color:red"> Overfitting is the point where our model memorizes the dataset instead of learning from the dataset. An example of overfitting can be seen when the validation loss is very different from the training loss (Usually training loss is high and validation is low). This will lead to our model producing bad predictions on the test data or data it has never seen before. e.g a model saying a cat is a dog </p> 
+
+24. **What is a metric? How does it differ to "loss"?**
+      
+      <p style="color:red"> A metric is a measure that is used to evaluate the performance of our model after training like error_rate, accuracy etc while the loss is used during training to evaluate how well the model is performing by comparing the model result to the target (ground truth or label), getting the error and using this error to update the weights.  </p> 
+
+25. **How can pretrained models help?**
+      
+      <p style="color:red">Pretraiend models are very useful because they contain weights that have typically been trained on large datasets with very deep models and for a long time. These weights can then be used as a starting weights for our model and after training our model for a few epochs we start getting great results. Hence, they save time and resources needed to get very good results. </p> 
+
 1. What is the "head" of a model?
 1. What kinds of features do the early layers of a CNN find? How about the later layers?
 1. Are image models only useful for photos?
